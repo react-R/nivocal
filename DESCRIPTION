@@ -14,3 +14,4 @@ Imports:
     htmltools,
     htmlwidgets,
     reactR
+RoxygenNote: 6.1.1
