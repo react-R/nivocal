@@ -96,18 +96,11 @@
 </div>
 <p>Now we have all the files we need for a working <code>htmlwidget</code> but unfortunately not working in the way we want.</p>
 </div>
-<div id="lines-of-javascript" class="section level2">
+<div id="lines-of-javascript-and-build" class="section level2">
 <h2 class="hasAnchor">
-<a href="#lines-of-javascript" class="anchor"></a>1.5 Lines of JavaScript</h2>
+<a href="#lines-of-javascript-and-build" class="anchor"></a>1.5 Lines of JavaScript and Build</h2>
 <p>In the JavaScript, we will need to import the module we want to use. For <code>nivocal</code> we want <code>ResponsiveCalendar</code>. <code>import</code> in JavaScript is very similar to <code><a href="https://www.rdocumentation.org/packages/base/topics/library">library()</a></code> in R.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1">import { ResponsiveCalendar } from <span class="st">'@nivo/calendar'</span></a></code></pre></div>
-<div class="figure">
-<img src="reference/figures/nivocal3.gif" alt="screencast of writing the JavaScript"><p class="caption">screencast of writing the JavaScript</p>
-</div>
-</div>
-<div id="build-javascript" class="section level2">
-<h2 class="hasAnchor">
-<a href="#build-javascript" class="anchor"></a>Build JavaScript</h2>
 <p>The JavaScript build toolchain can get complicated, but fortunately <code>reactR</code> takes care of much of this for us. I hate to tell you, but you will need to install <a href="https://nodejs.org/en/download/"><code>node</code></a> and <a href="https://yarnpkg.com/lang/en/docs/install"><code>yarn</code></a>. I promise this is not hard or scary though. Once you have both installed, we will build/webpack our JavaScript in the RStudio terminal or other terminal/console.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1">yarn install</a>
 <a class="sourceLine" id="cb4-2" title="2">yarn run webpack</a></code></pre></div>

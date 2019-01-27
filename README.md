@@ -57,7 +57,7 @@ scaffoldReactWidget(
 Now we have all the files we need for a working `htmlwidget` but
 unfortunately not working in the way we want.
 
-## 1.5 Lines of JavaScript
+## 1.5 Lines of JavaScript and Build
 
 In the JavaScript, we will need to import the module we want to use. For
 `nivocal` we want `ResponsiveCalendar`. `import` in JavaScript is very
@@ -66,10 +66,6 @@ similar to `library()` in R.
 ``` r
 import { ResponsiveCalendar } from '@nivo/calendar'
 ```
-
-![screencast of writing the JavaScript](./man/figures/nivocal3.gif)
-
-## Build JavaScript
 
 The JavaScript build toolchain can get complicated, but fortunately
 `reactR` takes care of much of this for us. I hate to tell you, but you
