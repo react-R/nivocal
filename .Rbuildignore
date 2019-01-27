@@ -1,0 +1,4 @@
+^node_modules$
+^srcjs$
+^nivocal\.Rproj$
+^\.Rproj\.user$
