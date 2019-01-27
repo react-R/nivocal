@@ -1,3 +1,4 @@
+^README\.Rmd$
 ^node_modules$
 ^srcjs$
 ^nivocal\.Rproj$
