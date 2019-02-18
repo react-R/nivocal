@@ -70,7 +70,7 @@ nivocal <- function(
 #' @name nivocal-shiny
 #'
 #' @export
-nivocalOutput <- function(outputId, width = '100%%', height = '400px'){
+nivocalOutput <- function(outputId, width = '100%', height = '400px'){
   htmlwidgets::shinyWidgetOutput(outputId, 'nivocal', width, height, package = 'nivocal')
 }
 
@@ -89,6 +89,6 @@ nivocal_html <- function(id, style, class, ...) {
     reactR::html_dependency_corejs(),
     reactR::html_dependency_react(),
     reactR::html_dependency_reacttools(),
-    htmltools::tags$div(id = id, class = class)
+    htmltools::tags$div(id = id, class = class, style = style)
   )
 }
